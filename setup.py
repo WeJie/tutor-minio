@@ -9,24 +9,18 @@ with io.open(os.path.join(here, "README.rst"), "rt", encoding="utf8") as f:
 
 
 setup(
-    name="tutor-minio",
-    version="0.0.3",
+    name="tutor-minio-tmp",
+    version="0.0.4",
     url="https://docs.tutor.overhang.io/",
-    project_urls={
-        "Documentation": "https://docs.tutor.overhang.io/",
-        "Code": "https://github.com/overhangio/tutor/tree/master/plugins/minio",
-        "Issue tracker": "https://github.com/overhangio/tutor/issues",
-        "Community": "https://discuss.overhang.io",
-    },
     license="AGPLv3",
-    author="Overhang.io",
-    author_email="contact@overhang.io",
+    author="weijie",
+    author_email="wejie00@foxmail.com",
     description="A Tutor plugin for object storage in MinIO",
     long_description=readme,
-    packages=["tutorminio"],
+    packages=["tutorminiotmp"],
     include_package_data=True,
     python_requires=">=3.5",
-    entry_points={"tutor.plugin.v0": ["minio = tutorminio.plugin"]},
+    entry_points={"tutor.plugin.v0": ["minio = tutorminiotmp.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
