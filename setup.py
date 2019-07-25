@@ -10,7 +10,7 @@ with io.open(os.path.join(here, "README.rst"), "rt", encoding="utf8") as f:
 
 setup(
     name="tutor-minio-tmp",
-    version="0.0.4",
+    version="0.0.5",
     url="https://docs.tutor.overhang.io/",
     license="AGPLv3",
     author="weijie",
